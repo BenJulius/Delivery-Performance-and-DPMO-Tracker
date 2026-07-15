@@ -1,2 +1,5 @@
-# Delivery-Performance-and-DPMO-Tracker
-Conceptual architecture and documentation for a real-time logistics KPI dashboard. Features dynamic DPMO calculation, delivery failure tracking, and automated root-cause analysis.
+# Logistics KPI & DPMO Tracker
+
+This repository contains the conceptual architecture, documentation, and logic for a real-time logistics dashboard designed to track Last-Mile delivery performance and analyze defects. 
+
+*Note: This repository contains sanitized, non-proprietary documentation and conceptual models representing KPI tools developed for operational tracking.*
