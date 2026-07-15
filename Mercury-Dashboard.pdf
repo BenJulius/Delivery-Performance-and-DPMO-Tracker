@@ -1,0 +1,37 @@
+PROJECT CASE STUDY: Delivery Performance & DPMO Tracker
+Developer: Ben Julius
+Platform: Amazon Mercury (Internal Dashboard & Reporting Engine)
+Project Overview
+This project was developed to address a critical visibility gap in Last-Mile delivery operations.
+This custom-built Mercury dashboard provides real-time, high-definition tracking of undelivered
+packages, calculates the Defects Per Million Opportunities (DPMO) dynamically, and
+categorizes delivery failures to drive operational improvements.
+The Problem
+Lack of Real-Time KPI Tracking: Leadership and Shift Assistants lacked a centralized, real-time
+view of daily delivery health and DPMO metrics.
+No Centralized Root-Cause Analysis: When packages were missed, digging into the "why" (e.g.,
+vehicle breakdowns, customer-unreachable, bad addresses) required manually pulling and
+cross-referencing multiple data sources, delaying course corrections during active shifts.
+The Solution
+I built a real-time tracking dashboard utilizing Amazon's internal Mercury platform to ingest,
+process, and visualize delivery success metrics.
+Dynamic DPMO Calculation: Automatically calculates delivery quality metrics. For example, if
+1,000 packages are scheduled and 990 are successfully delivered, the dashboard dynamically
+calculates and displays a DPMO of 10,000.
+Granular Failure Breakdown: Features a drill-down data table listing every single missed
+package, mapping it to the assigned route, driver, and specific standard failure code.
+Visual Pareto Charting: Categorizes delivery failures (e.g., Access Issue, Business Closed,
+Package Damaged) to visually show operations teams exactly where to focus their recovery
+efforts.
+System Architecture & Data Flow
+[Raw Delivery Data Stream] ──► Ingests live logistics data.
+[Mercury Engine] ──► Processes custom query logic and filtering.
+[Aggregation Layer] ──► Calculates DPMO: (Defects / Opportunities) * 1,000,000.
+[Dashboard UI] ──► Displays KPI cards, Pareto breakdowns, and the active defect log.
+Business Impact & KPIs
+Improved Shift Response: Reduced the time to identify and action failing routes from hours to
+minutes, allowing for mid-shift package rescues.
+Targeted Feedback: Provided Process Assistants and Managers with clear, driver-level data to
+address recurring delivery issues.
+Precision Quality Tracking: Transitioned the site from relying on basic percentage metrics to
+utilizing industry-standard DPMO, enabling highly precise quality control.
